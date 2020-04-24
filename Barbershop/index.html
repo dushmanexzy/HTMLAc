@@ -25,7 +25,7 @@
 
       <ul>
         <li>
-          <button type="button">Войти</button>
+          <a href="login.html">Войти</a>
         </li>
       </ul>
     </nav>
@@ -91,8 +91,9 @@
           <img src="img/main_gallery.jpg" alt="Интерьер" width="286" height="164">
         </a>
       </figure>
-      <button>Назад</button>
-      <button>Вперед</button>
+
+      <button type="button">Назад</button>
+      <button type="button">Вперед</button>
     </section>
 
     <!-- Контактная информация -->
@@ -122,6 +123,67 @@
       <p>
         Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
       </p>
+
+      <form action="server.serv" method="POST">
+        <p>
+          <label for="date">Дата</label>
+          <input id="date" type="date" name="date" value="2017-10-08">
+        </p>
+        <p>
+          <label for="time">Время</label>
+          <input id="time" type="time" name="time" value="10:00">
+        </p>
+        <p>
+          <label for="name">Ваше имя</label>
+          <input id="name" type="text" name="name" placeholder="Борода">
+        </p>
+        <p>
+          <label for="phone">Телефон</label>
+          <input id="phone" type="tel" name="phone" placeholder="+7 123 456-78-90">
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+
+    <!-- Личный кабинет. Модальное окно. -->
+    <section>
+      <h2>Личный кабинет</h2>
+
+      <p>Введите свой логин и пароль</p>
+
+      <form action="server.serv" method="POST">
+        <p>
+          <label class="visually-hidden" for="login">Логин</label>
+          <input id="login" type="text" name="login" placeholder="Логин">
+        </p>
+
+        <p>
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input id="password" type="password" name="password" placeholder="Пароль">
+        </p>
+
+        <p>
+          <input id="remember" type="checkbox" name="remember">
+          <label for="remember">Запомнить меня</label>
+          <a href="#">Забыли пароль?</a>
+        </p>
+
+        <button type="submit">Войти</button>
+      </form>
+
+      <button type="button">Закрыть</button>
+    </section>
+
+    <!-- Как добраться. Модальное окно -->
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+
+      <p>
+        <img src="img/map.jpg" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="780"
+          height="560">
+      </p>
+
+      <button type="button">Закрыть</button>
     </section>
   </main>
 
@@ -154,22 +216,6 @@
       <a href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
-
-  <!-- Личный кабинет. Модальное окно. -->
-  <section>
-    <h2>Личный кабинет</h2>
-
-    <p>Введите свой логин и пароль</p>
-    <!-- тут будет форма -->
-    <button>Закрыть</button>
-  </section>
-
-  <!-- Как добраться. Модальное окно -->
-  <section>
-    <h2>Как до нас добраться</h2>
-
-    <button>Закрыть</button>
-  </section>
 </body>
 
 </html>
