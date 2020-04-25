@@ -139,9 +139,9 @@
           <p>300 ₽
             <a href="#">Купить</a>
           </p>
-        </li>        
+        </li>
       </ul>
-      
+
       <!-- Пагинация -->
       <ul>
         <li><a href="#">1</a></li>
@@ -149,6 +149,35 @@
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
       </ul>
+    </section>
+
+    <!-- Личный кабинет. Модальное окно. -->
+    <section>
+      <h2>Личный кабинет</h2>
+
+      <p>Введите свой логин и пароль</p>
+
+      <form action="server.serv" method="POST">
+        <p>
+          <label class="visually-hidden" for="login">Логин</label>
+          <input id="login" type="text" name="login" placeholder="Логин">
+        </p>
+
+        <p>
+          <label class="visually-hidden" for="password">Пароль</label>
+          <input id="password" type="password" name="password" placeholder="Пароль">
+        </p>
+
+        <p>
+          <input id="remember" type="checkbox" name="remember">
+          <label for="remember">Запомнить меня</label>
+          <a href="#">Забыли пароль?</a>
+        </p>
+
+        <button type="submit">Войти</button>
+      </form>
+
+      <button type="button">Закрыть</button>
     </section>
   </main>
 
@@ -181,15 +210,6 @@
       <a href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
-
-  <!-- Личный кабинет. Модальное окно. -->
-  <section>
-    <h2>Личный кабинет</h2>
-
-    <p>Введите свой логин и пароль</p>
-    <!-- тут будет форма -->
-    <button type="button">Закрыть</button>
-  </section>
 </body>
 
 </html>
