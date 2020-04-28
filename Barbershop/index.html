@@ -19,24 +19,28 @@
         <img src="img/main_logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
       </a>
 
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="fixed-container">
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
 
-      <ul class="user-navigation">
-        <li>
-          <a class="login-link" href="login.html">Вход</a>
-        </li>
-      </ul>
+          <ul class="user-navigation">
+            <li>
+              <a class="login-link" href="login.html">Вход</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <!-- Основной контент -->
-  <main class="container">
+  <main class="fixed-container">
     <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
 
     <!-- Преимущества -->
@@ -104,7 +108,7 @@
 
     <div class="index-columns">
       <!-- Контактная информация -->
-      <section>
+      <section class="contacts">
         <h2>Контактная информация</h2>
 
         <p>
@@ -163,39 +167,41 @@
 
   <!-- Подвал сайта -->
   <footer class="main-footer">
-    <p class="footer-contacts">
-      Барбершоп «Бородинский»<br>
-      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="map.html">Как нас найти?</a><br>
-      Телефон: +7 (812) 666-02-66
-    </p>
+    <div class="fixed-container">
+      <p class="footer-contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (812) 666-02-66
+      </p>
 
-    <div class="footer-social">
-      <p>Давайте дружить!</p>
+      <div class="footer-social">
+        <p>Давайте дружить!</p>
 
-      <ul>
-        <li>
-          <a class="socila-button" href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a class="socila-button" href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a class="socila-button" href="#">Инстаграм</a>
-        </li>
-      </ul>
+        <ul>
+          <li>
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="footer-copyright">Разработано:
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
     </div>
-
-    <p class="footer-copyright">Разработано:
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-    </p>
   </footer>
 
   <!-- Личный кабинет. Модальное окно. -->
-  <section class="modal login">
+  <!-- <section class="modal login">
     <h2>Личный кабинет</h2>
 
-    <p>Введите свой логин и пароль</p>
+    <p>Введите пожалуйста свой логин и пароль</p>
 
     <form class="login-form" action="server.serv" method="POST">
       <p>
@@ -218,19 +224,19 @@
     </form>
 
     <button type="button">Закрыть</button>
-  </section>
+  </section> -->
 
   <!-- Как добраться. Модальное окно -->
-  <section class="modal map">
+  <!-- <section class="modal map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
 
     <p>
-      <img src="img/map_modal.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" width="780"
-        height="560">
+      <img src="img/map_modal.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
+        width="780" height="560">
     </p>
 
     <button type="button">Закрыть</button>
-  </section>
+  </section> -->
 </body>
 
 </html>

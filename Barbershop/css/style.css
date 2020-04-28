@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -37,6 +43,13 @@ a {
   background-color: #663d15;
 }
 
+.fixed-container {
+  margin: 0 auto;
+  padding: 0 10px;
+
+  width: 940px;
+}
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -47,17 +60,52 @@ a {
   white-space: nowrap; /* added line */
 }
 
+.main-header {
+  margin-bottom: 79px;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-size: 16px;
   line-height: 20px;
   color: #fff;
 
+  background-color: transparent;
+}
+
+.main-header-logo {
+  order: 2;
+
+  width: 371px;
+  height: 155px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
   background-color: #000;
+}
+
+.main-navigation-wrapper .fixed-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation,
 .user-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 504px;
 }
 
 .site-navigation a,
@@ -72,11 +120,22 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 85px;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .features-item {
+  width: 300px;
   text-align: center;
 }
 
@@ -86,6 +145,11 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 36px;
+  padding: 55px 80px;
   color: #000;
 
   background-color: #f8f5f2;
@@ -99,7 +163,14 @@ a {
   line-height: 42px;
 }
 
+.news {
+  width: 400px;
+}
+
 .news-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -107,9 +178,24 @@ a {
   text-transform: none;
 }
 
+.gallery {
+  width: 300px;
+}
+
 .gallery-content {
+  margin: 0;
+  padding: 0;
+
   background-color: #ccc;
   border: 7px solid #fff;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
 }
 
 .appointment-item input {
@@ -124,12 +210,25 @@ a {
 }
 
 .main-footer {
+  margin-top: 65px;
+  padding: 60px 0;
+
   color: #fff;
 
   background-color: #212121;
   background-image: url('../img/bg_dark.png');
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .fixed-container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 310px;
+  margin: 0;
+  margin-right: 90px;
 }
 
 .footer-contacts a {
@@ -143,6 +242,8 @@ a {
 }
 
 .footer-social {
+  width: 145px;
+
   text-align: center;
 }
 
@@ -155,6 +256,10 @@ a {
 }
 
 .footer-copyright {
+  width: 140px;
+  margin: 0;
+  margin-left: auto;
+
   text-align: center;
 }
 
@@ -166,6 +271,9 @@ a {
 }
 
 .modal {
+  width: 548px;
+  height: 473px;
+  
   color: #000;
 
   background-color: #000;
